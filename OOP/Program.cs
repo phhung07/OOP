@@ -52,7 +52,7 @@ namespace OOP
             public void withdraw(double amount)
             {
                 balance -= amount;
-                Console.WriteLine("So du sau khi rut: " + balance);
+                Console.WriteLine("So tien da rut: " + amount);
             }
             public void displaybalance()
             {
@@ -112,7 +112,7 @@ namespace OOP
                 set
                 {
                     if (value >= 0) _balance = value;
-                    else Console.WriteLine("Error: Balance cannot be nagetive");
+                    else Console.WriteLine("Error: Balance cannot be negative");
                 }
             }
             public bool IsVIP
@@ -148,11 +148,11 @@ namespace OOP
             {
                 if (amount > Balance) { return "So du khong du de rut"; }
                 Balance -= amount;
-                return "So du sau khi rut: " + Balance;
+                return "So tien da rut: " + amount;
             }
         }
         static void Main(string[] args)
-        {
+        {   //----------Day1----------
             student student1 = new student();
             student1.name = "Hung";
             student1.age = 19;
@@ -187,6 +187,22 @@ namespace OOP
             car2.accelerate(15);
             car2.showinfo();
             car2.stop();
+            //----------Day2----------
+            UserAccount user1 = new UserAccount("9326369336", "Pham Hung", "290707", 50000);
+            Console.WriteLine("AccountID: " + user1.AccountID);
+            Console.WriteLine("UserName: " + user1.UserName);
+            Console.WriteLine("Balance: " + user1.Balance); 
+            Console.WriteLine("IsVIP: " + user1.IsVIP);
+            Console.WriteLine("CreatedDate: " + user1.CreatedDate);
+
+            Console.WriteLine();
+
+            user1.UserName = "Tony Bun";
+            Console.WriteLine("UserName After Changed: " + user1.UserName);
+            user1.Deposit(2000);
+            Console.WriteLine(user1.WithDraw(7000));
+            Console.WriteLine("Current Balance: " + user1.Balance);
+            Console.WriteLine("IsVIP: " + user1.IsVIP);
         }
     }
 }
