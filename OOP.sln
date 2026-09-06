@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encapsulation", "Encapsulat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{99125E0E-16EC-4408-85C0-7AAAC724E4C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specialization, Extension, and Inheritance", "Specialization, Extension, and Inheritance", "{BA89DD40-D437-4230-B5D2-E7DEFE73F892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specialization, Extension, and Inheritance", "Specialization, Extension, and Inheritance\Specialization, Extension, and Inheritance.csproj", "{E6663B40-E417-4752-8B18-8ED9D7BBCC32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{99125E0E-16EC-4408-85C0-7AAAC724E4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99125E0E-16EC-4408-85C0-7AAAC724E4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99125E0E-16EC-4408-85C0-7AAAC724E4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6663B40-E417-4752-8B18-8ED9D7BBCC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6663B40-E417-4752-8B18-8ED9D7BBCC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6663B40-E417-4752-8B18-8ED9D7BBCC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6663B40-E417-4752-8B18-8ED9D7BBCC32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EBB880B7-20FE-48F9-9AC3-9FDBB6BE65D1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{99125E0E-16EC-4408-85C0-7AAAC724E4C9} = {FE35E368-FA7C-44BC-B463-F9B6367C7A9C}
+		{E6663B40-E417-4752-8B18-8ED9D7BBCC32} = {BA89DD40-D437-4230-B5D2-E7DEFE73F892}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96C9FE70-6322-45DE-942B-ABFB4DD6012A}
