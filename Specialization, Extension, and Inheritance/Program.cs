@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Specialization__Extension__and_Inheritance
 {
-    using System;
+ 
 
     class Animal
     {
