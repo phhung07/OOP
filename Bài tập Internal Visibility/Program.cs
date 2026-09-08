@@ -13,7 +13,7 @@ namespace N
     }
     internal class  I
     {
-        public static int P = 30;
+        public static int p = 30;
         internal static int i = 40;
     }
     public class A
@@ -25,7 +25,7 @@ namespace N
             Console.WriteLine(P.p);
             Console.WriteLine(P.i);
 
-            Console.WriteLine(I.P);
+            Console.WriteLine(I.p);
             Console.WriteLine(I.i);
         }
     }
