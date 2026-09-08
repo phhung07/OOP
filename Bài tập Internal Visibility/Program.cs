@@ -16,4 +16,24 @@ namespace N
         public static int P = 30;
         internal static int i = 40;
     }
+    public class A
+    {
+        public static void Test()
+        {
+            P p = new P();
+            I i = new I();
+            Console.WriteLine(P.p);
+            Console.WriteLine(P.i);
+
+            Console.WriteLine(I.P);
+            Console.WriteLine(I.i);
+        }
+    }
+    class Program
+    {
+        static void Main()
+        {
+            N.A.Test();
+        }
+    }
 }
