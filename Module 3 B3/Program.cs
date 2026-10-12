@@ -29,21 +29,21 @@ namespace Module_3_B3
             {
                 if(gd is GiaoDichVang gdv)
                 {
-                    tongluongvang += gdv.soLuong;
+                    tongluongvang += gdv.SoLuong;
                 }
                 if(gd is GiaoDichTienTe gdtt)
                 {
                     if(gdtt.loaiTienTe == "USD")
                     {
-                        tongluongtienusd += gdtt.soLuong;
+                        tongluongtienusd += gdtt.SoLuong;
                     }
                     if(gdtt.loaiTienTe == "Euro")
                     {
-                        tongluongtieneuro += gdtt.soLuong;
+                        tongluongtieneuro += gdtt.SoLuong;
                     }
                     if (gdtt.loaiTienTe == "VN")
                     {
-                        tongluongtienvn += gdtt.soLuong;
+                        tongluongtienvn += gdtt.SoLuong;
                     }
                 }
             }
@@ -51,19 +51,19 @@ namespace Module_3_B3
             {
                 if (gd is GiaoDichVang gdv)
                 {
-                    tongtienvang += gdv.soLuong * gdv.donGia;
+                    tongtienvang += gdv.SoLuong * gdv.DonGia;
                 }
 
                 if (gd is GiaoDichTienTe gdtt)
                 {
                     if (gdtt.loaiTienTe == "USD" || gdtt.loaiTienTe == "Euro")
                     {
-                        tongtientiente += gdtt.soLuong * gdtt.donGia * gdtt.tiGia;
+                        tongtientiente += gdtt.SoLuong * gdtt.DonGia * gdtt.tiGia;
                     }
 
                     if (gdtt.loaiTienTe == "VN")
                     {
-                        tongtientiente += gdtt.soLuong * gdtt.donGia;
+                        tongtientiente += gdtt.SoLuong * gdtt.DonGia;
                     }
                 }
             }
@@ -78,12 +78,12 @@ namespace Module_3_B3
             Console.WriteLine("Cac giao dich co don gia > 1 ty:");
             foreach (GiaoDich gd in danhsach)
             {
-                if (gd.donGia > 1000000000)
+                if (gd.DonGia > 1000000000)
                 {
-                    Console.WriteLine("Ma giao dich: " + gd.maGiaoDich);
-                    Console.WriteLine("Ngay giao dich: " + gd.ngayGiaodich);
-                    Console.WriteLine("Don gia: " + gd.donGia);
-                    Console.WriteLine("So luong: " + gd.soLuong);
+                    Console.WriteLine("Ma giao dich: " + gd.MaGiaoDich);
+                    Console.WriteLine("Ngay giao dich: " + gd.NgayGiaoDich);
+                    Console.WriteLine("Don gia: " + gd.DonGia);
+                    Console.WriteLine("So luong: " + gd.SoLuong);
                 }
             }
         }

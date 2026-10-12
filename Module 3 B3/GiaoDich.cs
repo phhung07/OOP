@@ -2,18 +2,38 @@
 
 namespace Module_3_B3
 {
-    public class GiaoDich
+    public abstract class GiaoDich
     {
-        public string maGiaoDich { get; }
-        public DateTime ngayGiaodich { get; }
-        public double donGia { get; }
-        public int soLuong { get; }
+        private string maGiaoDich;
+        private DateTime ngayGiaodich;
+        private double donGia;
+        private int soLuong;
+        public string MaGiaoDich
+        { 
+            get { return maGiaoDich; } 
+            set { if(!string.IsNullOrEmpty(value)) maGiaoDich = value; } 
+        }
+        public DateTime NgayGiaoDich
+        {
+            get { return ngayGiaodich; }
+            set { if(value <= DateTime.Now) ngayGiaodich = value; }
+        }       
+        public double DonGia
+        {
+            get { return donGia; }
+            set { if (value > 0) donGia = value; }
+        }
+        public int SoLuong
+        {
+            get { return soLuong; }
+            set { if (value > 0) soLuong = value; }
+        }
         public GiaoDich(string maGiaoDich, DateTime ngayGiaodich, double donGia, int soLuong)
         {
             this.maGiaoDich = maGiaoDich;
             this.ngayGiaodich = ngayGiaodich;
             this.donGia = donGia;
             this.soLuong = soLuong;
-        }
+        }        
     }
 }

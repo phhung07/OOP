@@ -38,7 +38,7 @@ namespace Module_3_B2
             Console.WriteLine("Tong tien sach giao khoa: " + tongtienSGK);
             Console.WriteLine("Tong tien sach tham khao: " + tongtienSTK);
             Console.Write("Nhap nha xuat ban: ");
-            string nhaXuatBan = Console.ReadLine();
+            string nhaXuatBan = Console.ReadLine().ToUpper();
             foreach(Sach sach in danhSach)
             {
                 if(sach.nhaXuatBan == nhaXuatBan && sach is SachGiaoKhoa)
