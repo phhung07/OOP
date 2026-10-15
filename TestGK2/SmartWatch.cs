@@ -32,8 +32,4 @@ namespace TestGK2
             Console.WriteLine($"SmartWatch {tentb} da ket noi vao mang Wifi: {networkName}");
         }
     }
-    internal interface INetworkConnectable
-    {
-        void ConnectToWifi(string networkName);
-    }
 }
