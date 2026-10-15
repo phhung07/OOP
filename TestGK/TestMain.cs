@@ -25,7 +25,7 @@ namespace TestGK
 
             Project p3 = new Project("DA03", "Website Thuong mai dien tu");
             p3.AddMember(new Member("MB07", "Ngo Thanh Long", "Developer"));
-            p3.AddMember(new Member("MB08", "Đo Thi Mai", "Tester"));
+            p3.AddMember(new Member("MB08", "Do Thi Mai", "Tester"));
             p3.AddMember(new Member("MB09", "Bui Van Nam", "Developer"));
             p.Add(p3);
             foreach (var project in p)
