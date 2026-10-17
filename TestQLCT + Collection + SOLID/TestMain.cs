@@ -38,7 +38,6 @@ namespace TestQLCT___Collection___SOLID
             }
             Console.Write("Nhap ma nhan vien can tim: ");
             string macantim = Console.ReadLine().ToUpper();
-
             if (dic.TryGetValue(macantim, out NhanVien nvcantim))
             {
                 nvcantim.Hienthi();
@@ -49,6 +48,16 @@ namespace TestQLCT___Collection___SOLID
             {
                 Console.WriteLine("Khong tim thay nhan vien");
             }
+            Console.WriteLine("Nhan ma nhan vien can xoa: ");
+            string macanxoa = Console.ReadLine().ToUpper();
+            if(dic.TryGetValue(macanxoa, out NhanVien nvcanxoa))
+            {
+                dic.Remove(macanxoa);
+                list.Remove(nvcanxoa);
+                Console.WriteLine("Da xoa nhan vien co ma: " + macanxoa);
+            }
+            else
+                Console.WriteLine("Khong tim thay nhan vien");
         }
         static double Tongluong(List<NhanVien> list)
         {
